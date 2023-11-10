@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+html
+{
+	color: white;
+	text-rendering: optimizeLegibility;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+
+.forgot
+{
+	text-decoration: none; 
+	color: white;
+	transition: all 0.5s;
+}
+
+.forgot:hover 
+{
+	text-decoration: underline; 
+	color: rgb(239, 183, 73);
+}
+
+section
+{
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../imgs/login_register/bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	padding: 50px;
+	text-align: center;
+	justify-content: center;
+}
+
+.frm
+{
+	width: 650px;
+	background-color: rgba(11, 11, 11, 0.5);
+	padding: 20px;
+	text-align: center;
+	justify-content: center;
+	display: inline-block;
+}
+
+h1
+{
+	font-size: 60.8px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+input[type=text], input[type=password]
+{
+	color: white;
+	background-color: rgba(255,255,255,0);
+	border: none;
+	width: 580px;
+	margin: 20px 0px;
+	font-family: 'Times New Roman';
+}
+
+input[type=text], input[type=password]:focus
+{
+	outline: none;
+}
+
+.remember-forgot
+{
+	justify-content: space-between;
+	display: flex;
+	margin: 20px 0px;
+}
+
+.btn-login
+{
+	padding: 10px;
+	font-family: 'Times New Roman';
+	cursor: pointer;
+	background-color: rgb(227, 165, 75);
+	margin-bottom: 20px;
+}
+
+.btn-login
+{
+	width: 100%;
+}
+
+.btn-login:hover
+{
+	background-color: rgba(221,144,34,1.00);
+}
+
+.or
+{
+	background-color: rgb(227, 165, 75);
+	width: 45px;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.face-gmail button
+{
+	font-family: 'Times New Roman';
+	cursor: pointer;
+	border: none;
+	width: 200px;
+}
+
+.icon
+{
+	display: inline-block;
+	width: 50px;
+	height: 38.6px;
+	line-height: 38.6px;
+	border-right: solid;	
+}
+
+.text
+{
+	display: inline-block;
+	padding: 10px;
+	width: 150px;
+	text-align: left;
+}
+
+.text, .icon
+{
+	color: white;
+	font-size: 16px;
+	float: left;
+}
+
+.face > .text, .face > .icon
+{
+	background-color: rgba(47,62,173,1.00);
+}
+
+.face:hover > .text, .face:hover > .icon
+{
+	background-color: rgba(37,50,142,1.00);
+}
+
+.gmail > .text, .gmail > .icon
+{
+	background-color: rgba(219,55,55,1.00);
+}
+
+.gmail:hover > .text, .gmail:hover > .icon
+{
+	background-color: rgba(189,34,34,1.00);
+}
+
+.face-gmail
+{
+	justify-content: space-between;
+	display: flex;
+	width: 500px;
+	left: 55px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+a
+{
+	text-decoration: none;
+	color: rgb(239, 183, 73);
+}
+
+/*footer--------------------------------------*/
+.copyright
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	color: #fff;
+
+}
+
+.logo
+{
+	width: 200px;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}

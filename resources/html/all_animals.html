@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>All animals</title>
+	<link rel="stylesheet" href="../css/all_animals.css" type="text/css">
+</head>
+
+<body>
+	<!--header------------------------->
+	<header class="banner">
+		<a href="home.html"><img class="logo" src="../../imgs/logo/4.png" alt="logo"></a>
+		<ul class="main-nav">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="all_animals.html">All animals</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about_us.html">About Us</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="register.html">Register</a></li>
+		</ul>
+		<div class="clearfix"></div>
+	</header>
+	<!--section------------------------->
+	<section class="element-section">
+		<h1>All animals</h1>
+		<p>To find exactly what you are looking for, use the filter.</p>
+		<div id="main-btn-filter">
+			<button class="main-btn main-active" onClick="Selection(StartingLetter)">By Starting letter</button>
+			<button class="main-btn" onClick="Selection(Endangered)">By Endangered</button>
+			<button class="main-btn" onClick="Selection(Type)">By Major Types</button>
+		</div>
+		
+		<div id="btn-letter-filter" class="StartingLetter">
+			<button class="btn1 active1" onclick="letterSelection('all')"> Show all</button>
+			<button class="btn1" onclick="letterSelection('a')">a</button>
+			<button class="btn1" onclick="letterSelection('b')">b</button>
+			<button class="btn1" onclick="letterSelection('c')">c</button>
+			<button class="btn1" onclick="letterSelection('d')">d</button>
+			<button class="btn1" onclick="letterSelection('e')">e</button>
+			<button class="btn1" onclick="letterSelection('f')">f</button>
+			<button class="btn1" onclick="letterSelection('g')">g</button>
+			<button class="btn1" onclick="letterSelection('h')">h</button>
+			<button class="btn1" onclick="letterSelection('i')">i</button>
+			<button class="btn1" onclick="letterSelection('j')">j</button>
+			<button class="btn1" onclick="letterSelection('k')">k</button>
+			<button class="btn1" onclick="letterSelection('l')">l</button>
+			<button class="btn1" onclick="letterSelection('m')">m</button>
+			<button class="btn1" onclick="letterSelection('n')">n</button>
+			<button class="btn1" onclick="letterSelection('o')">o</button>
+			<button class="btn1" onclick="letterSelection('p')">p</button>
+			<button class="btn1" onclick="letterSelection('q')">q</button>
+			<button class="btn1" onclick="letterSelection('r')">r</button>
+			<button class="btn1" onclick="letterSelection('s')">s</button>
+			<button class="btn1" onclick="letterSelection('t')">t</button>
+			<button class="btn1" onclick="letterSelection('u')">u</button>
+			<button class="btn1" onclick="letterSelection('v')">v</button>
+			<button class="btn1" onclick="letterSelection('w')">w</button>
+			<button class="btn1" onclick="letterSelection('x')">x</button>
+			<button class="btn1" onclick="letterSelection('y')">y</button>
+			<button class="btn1" onclick="letterSelection('z')">z</button>
+		</div>
+		
+		<div id="btn-endangered-filter" class="Endangered">
+			<button class="btn2 active2" onclick="endangeredSelection('all')"> Show all</button>
+			<button class="btn2" onClick="endangeredSelection('EX')">EX</button>
+			<button class="btn2" onClick="endangeredSelection('EW')">EW</button>
+			<button class="btn2" onClick="endangeredSelection('CR')">CR</button>
+			<button class="btn2" onClick="endangeredSelection('EN')">EN</button>
+			<button class="btn2" onClick="endangeredSelection('VU')">VU</button>
+			<button class="btn2" onClick="endangeredSelection('NT')">NT</button>
+			<button class="btn2" onClick="endangeredSelection('CD')">CD</button>
+			<button class="btn2" onClick="endangeredSelection('LC')">LC</button>
+			<button class="btn2" onClick="endangeredSelection('DD')">DD</button>
+			<button class="btn2" onClick="endangeredSelection('NE')">NE</button>
+		</div>
+		
+		<div id="btn-type-filter" class="Type">
+			<button class="btn3 active3" onclick="TypeSelection('all')"> Show all</button>
+			<button class="btn3" onclick="TypeSelection('Mammals')">Mammals</button>
+			<button class="btn3" onclick="TypeSelection('Reptiles')">Reptiles</button>
+			<button class="btn3" onclick="TypeSelection('Fish')">Fish</button>
+			<button class="btn3" onclick="TypeSelection('Birds')">Birds</button>
+			<button class="btn3" onclick="TypeSelection('Amphibians')">Amphibians</button>
+			<button class="btn3" onclick="TypeSelection('Invertebrates')">Invertebrates</button>
+			<button class="btn3" onclick="TypeSelection('Insects')">Insects</button>
+		</div>
+
+			<div class="filterDiv a LC Mammals"><a href="animals/Aardvark.html"><img src="../../imgs/animals/AARDVARK/2.png"><span>Aardvark</span></a></div>
+			<div class="filterDiv s NT Invertebrates"><a href="#"><img src="../../imgs/animals/STARFISH/2.jpg"><span>Starfish</span></a></div>
+			<div class="filterDiv b LC Mammals"><a href="#"><img src="../../imgs/animals/BAT/2.jpg"><span>Bat</span></a></div>
+			<div class="filterDiv p VU Birds"><a href="animals/Puffin.html"><img src="../../imgs/animals/PUFFIN/2.jpg"><span>Puffin</span></a></div>
+			<div class="filterDiv b DD Fish"><a href="#"><img src="../../imgs/animals/BLACK MARLIN/2.jpg"><span>Black Marlin</span></a></div>
+			<div class="filterDiv p LC Birds"><a href="#"><img src="../../imgs/animals/PEREGRINE FALCON/2.jpg"><span>Peregrine Falcon</span></a></div>
+			<div class="filterDiv b NT Fish"><a href="#"><img src="../../imgs/animals/BLUE SHARK/2.jpg"><span>Blue Shark</span></a></div>
+			<div class="filterDiv o LC Birds"><a href="#"><img src="../../imgs/animals/OSTRICH/2.jpg"><span>Ostrich</span></a></div>
+			<div class="filterDiv c VU Mammals"><a href="#"><img src="../../imgs/animals/CHEETAH/2.jpg"><span>Cheetah</span></a></div>
+			<div class="filterDiv m EN Insects"><a href="#"><img src="../../imgs/animals/MILLIPEDE/2.jpg"><span>Millipede</span></a></div>
+			<div class="filterDiv k LC Mammals"><a href="animals/Kangaroo.html"><img src="../../imgs/animals/KANGAROO/2.PNG"><span>Kangaroo</span></a></div>
+			<div class="filterDiv k LC Birds"><a href="#"><img src="../../imgs/animals/KING PENGUIN/2.png"><span>King Penguin</span></a></div>
+			<div class="filterDiv c LC Reptiles"><a href="#"><img src="../../imgs/animals/Crocodile/2.jpg"><span>Crocodile</span></a></div>
+			<div class="filterDiv u LC Birds"><a href="#"><img src="../../imgs/animals/Uguisu/2.jpg"><span>Uguisu</span></a></div>
+			<div class="filterDiv e LC Fish"><a href="#"><img src="../../imgs/animals/Electric Eel/2.jpg"><span>Electric Eel</span></a></div>
+			<div class="filterDiv s VU Mammals"><a href="#"><img src="../../imgs/animals/Sun Bear/2.png"><span>Sun Bear</span></a></div>
+			<div class="filterDiv k NE Invertebrates"><a href="#"><img src="../../imgs/animals/Krill/2.jpg"><span>Krill</span></a></div>
+			<div class="filterDiv d LC Mammals"><a href="#"><img src="../../imgs/animals/Dolphin/2.jpg"><span>Dolphin</span></a></div>
+			<div class="filterDiv f LC Mammals"><a href="#"><img src="../../imgs/animals/Fallow Deer/2.jpg"><span>Fallow Deer</span></a></div>
+			<div class="filterDiv g VU Mammals"><a href="#"><img src="../../imgs/animals/Giraffe/2.jpg"><span>Giraffe</span></a></div>
+			<div class="filterDiv h EW Birds"><a href="#"><img src="../../imgs/animals/Hawaiian Crow/2.jpg"><span>Hawaiian Crow</span></a></div>
+			<div class="filterDiv i VU Mammals"><a href="#"><img src="../../imgs/animals/Indian Rhinoceros/2.png"><span>Indian Rhinoceros</span></a></div>
+			<div class="filterDiv j NT Mammals"><a href="#"><img src="../../imgs/animals/Jaguar/2.png"><span>Jaguar</span></a></div>
+
+		
+	<script src="../js/all_animals-filter.js"></script>
+	</section>
+</body>
+</html>

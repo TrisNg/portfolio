@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: white;
+	text-rendering: optimizeLegibility;
+}
+
+body
+{
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	background-color: rgb(11,11,11);
+	overflow-x: hidden;
+}
+
+a
+{
+	text-decoration: none; 
+	color: white;
+	cursor: pointer
+}
+
+h1
+{
+	font-weight: bold;
+	word-spacing: 5px;
+	font-size: 300%;
+	text-transform: uppercase;
+	color: rgb(227, 165, 75);
+}
+
+p
+{
+	margin: 20px auto;
+}
+/*header--------------*/
+header 
+{
+	background-color: rgb(11, 11, 11);
+	text-align: center;
+}
+
+.logo
+{
+	width: 200px;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin: 30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.main-nav li a
+{
+	font-size: 110%;
+	font-weight: bold;
+	transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover
+{
+	border-bottom: 2px solid rgb(239, 183, 73);
+}
+
+.clearfix::after
+{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.banner
+{
+	background: linear-gradient(to right,rgba(0,0,0,0.5), rgba(0,0,0,0),rgba(0,0,0,0.5)), url("../../imgs/animals/banner/banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+}
+/*section--------------------------------------*/
+.element-section
+{
+	padding: 50px;
+	width: 1535.5px;
+	display: inline-block;
+	text-align: center;
+	justify-content: center;
+}
+	/*element---------------.*/
+.filterDiv 
+{
+	border-radius: 20px;
+	background-color: #F1F1F1;
+	overflow: hidden;
+	width: 23.8%;
+	text-align: center;
+	margin: 8.6px;
+	float: left;
+	display: block;
+}
+
+img
+{
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.filterDiv img:hover
+{
+	transform: scale(1.5);
+}
+
+span
+{
+	color: black;
+}
+	/*filter------------------*/
+#btn-letter-filter, #btn-endangered-filter, #btn-type-filter, #main-btn-filter
+{
+	margin-bottom: 20px;
+}
+
+#btn-endangered-filter, #btn-type-filter
+{
+	display: none;
+}
+
+.btn1, .btn2, .btn3, .main-btn
+{
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #fff;
+	cursor: pointer;
+	color: rgb(0, 50, 151);
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .main-btn:hover
+{
+	background-color: #ddd;
+}
+
+.btn1.active1, .btn2.active2, .btn3.active3, .main-btn.main-active
+{
+  background-color: #666;
+  color: white;
+}
+
+
+
+

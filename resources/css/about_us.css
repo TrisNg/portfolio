@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html
+{
+	background-color: rgb(11, 11, 11);
+	font-size: 20px;
+	color: white;
+	text-rendering: optimizeLegibility;
+}
+
+body
+{
+	overflow-x: hidden;
+	text-align: center;
+	justify-content: center;
+}
+
+a
+{
+	text-decoration: none; 
+	color: white;
+}
+
+h2
+{
+	color: rgb(227, 165, 75);
+	font-size: 52.8px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+h3
+{
+	font-size: 33.6px;
+	color: rgb(227, 165, 75);
+	line-height: 80px;
+}
+/*Header--------------------------------------*/
+header 
+{
+	background-color: rgb(11, 11, 11);
+	text-align: center;
+}
+
+.logo
+{
+	width: 200px;
+	float: left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin: 30px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.main-nav li a
+{
+	font-size: 110%;
+	font-weight: bold;
+	transition: border-bottom 0.5s;
+}
+
+.main-nav li a:hover
+{
+	border-bottom: 2px solid rgb(239, 183, 73);
+}
+
+.clearfix::after
+{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/*Section--------------------------------------*/
+section
+{
+	padding: 50px;
+}
+	/*Title section--------------------------------------*/
+.title-section
+{
+	background: linear-gradient(to right,rgba(225, 225, 225, 0.4),rgba(239, 183, 73, 0.7)), url("../../imgs/about us/img-section.png") no-repeat;
+	background-size: cover;
+	height: 271px;
+	padding: 0px;
+	line-height: 271px;
+}
+
+h1
+{
+	text-transform: uppercase;
+	color: rgb(0, 19, 124);
+	font-weight: bold;
+	word-spacing: 5px;
+	font-size: 60.8px;
+}
+	/*Goal section--------------------------------------*/
+.col > i
+{
+	font-size: 80px;
+	color: rgb(227, 165, 75);
+	line-height: 80px;
+}
+	/*Clients section--------------------------------------*/
+.clients-section
+{
+	background: url("../../imgs/about us/1.jpg") no-repeat left;
+	background-size: 55%;
+	overflow: hidden;
+	padding: 20px;
+	margin: 50px 0px;
+}
+
+.container
+{
+	width: 55%;
+	float: right;
+	background-color: rgb(0, 19, 124);
+	padding: 150px;
+}
+
+.container > p
+{
+	text-align: justify;
+}
+
+.container > h2
+{
+	margin: 0px;
+}
+	/*Clients section--------------------------------------*/
+.team-section img
+{
+	border-radius: 50%;
+	width: 250px;
+	display: inline-block;
+}
+
+.team-section .left-avt
+{
+	float: left;
+}
+
+.text
+{
+	display: inline-block;
+	width: 1024px;
+}
+
+h4
+{
+	color: rgb(227, 165, 75);
+	line-height: 48px;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.job
+{
+	text-transform: uppercase;
+	color: rgb(227, 165, 75);
+}
+
+.team-section .right-avt
+{
+	float: right;
+}
+
+.left
+{
+	text-align: left;
+}
+
+.right
+{
+	text-align: right;
+}
+
+span
+{
+	text-align: center;
+}
+/*footer--------------------------------------*/
+.copyright
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+}
